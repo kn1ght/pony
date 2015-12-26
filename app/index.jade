@@ -1,0 +1,41 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title Подбор поняшек
+    link(rel='stylesheet', href='css/style.css')
+  body
+    a.showModal(href='modalPony') Посмотреть игрушечных пони
+    .modal-bg
+    #modalPony.modal
+      .container
+        .block
+          label
+            | Цвет
+            select#color(name='color')
+              option(value='any') Любой
+              option(value='Красный') Красный
+              option(value='Оранжевый') Оранжевый
+              option(value='Желтый') Желтый
+              option(value='Зеленый') Зеленый
+              option(value='Голубой') Голубой
+              option(value='Синий') Синий
+              option(value='Фиолетовый') Фиолетовый
+          label
+            | Тип
+            select#kind(name='kind')
+              option(value='any') Любой
+              option(value='Единорог') Единорог
+              option(value='Пегас') Пегас
+              option(value='Земная пони') Земная пони
+              option(value='Аликорн') Аликорн
+          label
+            | Новый
+            input#is_new(type='checkbox')
+        .block
+          input#min.input-number(type='text', name='min', placeholder='Цена от')
+          input#max.input-number(type='text', name='max', placeholder='Цена до')
+        button#searchPonies Подобрать
+      .modalClose x
+      #poniesContainer.poniesContainer
+    script(src='js/bundle.js')
