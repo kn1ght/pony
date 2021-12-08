@@ -1,5 +1,5 @@
 # pony
-чтобы запустить проект, нужно выполнить следующие пункты:
+to start:
 
-1. npm install - подтягивает зависимости
-2. npm start - запускает сборку, результат доступен по адресу localhost:1337
+1. npm install
+2. npm start - project available at localhost:1337
